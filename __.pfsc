@@ -1,0 +1,16 @@
+deps = {
+    "gh.pfsc_example.min2": "v0.1.0",
+}
+
+from gh.pfsc_example.min2 import X1
+
+deduc W1 of X1.A2 {
+
+    asrt B1 {
+        sy = "$B1@$"
+    }
+
+    meson = "
+    X1.A2 by B1.
+    "
+}
